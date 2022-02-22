@@ -1,0 +1,28 @@
+
+/* div som utgör komponent*/
+#component_div {
+    background-color: brown;
+    padding: 20px;
+    position: fixed;
+    bottom: 38px;
+    right: 0px;
+    border: black 1px solid;
+}
+
+@media only screen and (max-width: 1150px) and (min-width: 700px) {
+    #component_div {
+        padding: 10px;
+        width: 30%;
+    }
+
+}
+
+@media only screen and (max-width: 699px) {
+    #component_div {
+        padding: 10px;
+        width: 40%;
+        bottom: 35px;
+    }
+
+
+}

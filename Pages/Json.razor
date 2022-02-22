@@ -1,0 +1,47 @@
+@page "/json"
+
+@inject HttpClient Http
+
+<PageTitle>Json</PageTitle>
+
+<h2>Json</h2>
+
+<p>Undersida som använder HttpClient för att läsa in data i JSON-format.</p>
+
+<!--- läser in info från json och skriver ut info i li-element  --->
+
+@if (studentInfo == null)
+{
+    <p>Laddar...</p>
+}
+else{
+    @foreach (var student in studentInfo) 
+    {
+    <ul id="json_ul">
+        <li class="json_li">Namn: @student.name</li> 
+        <li class="json_li">Ålder: @student.age</li> 
+        <li class="json_li">Mail: @student.mail</li> 
+        <li class="json_li">Ort: @student.city</li> 
+        <li class="json_li">Webbplats: <a href="@student.website">@student.website</a></li> 
+   </ul>
+    }
+}
+@code {
+    private StudentJson[]? studentInfo;
+
+    protected override async Task OnInitializedAsync()
+    {
+        studentInfo  = await Http.GetFromJsonAsync<StudentJson[]>("data/student.json");
+    }
+
+    public class StudentJson
+    {
+       
+        public string? name { get; set; }
+        public int? age { get; set; }
+        public string? mail { get; set; }
+        public string? city { get; set; }
+        public string? website { get; set; }
+    }
+}
+

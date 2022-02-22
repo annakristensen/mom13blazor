@@ -1,0 +1,162 @@
+/* /Components/ComponentAnna.razor.rz.scp.css */
+
+/* div som utgör komponent*/
+#component_div[b-fzn5wsu0mu] {
+    background-color: brown;
+    padding: 20px;
+    position: fixed;
+    bottom: 38px;
+    right: 0px;
+    border: black 1px solid;
+}
+
+@media only screen and (max-width: 1150px) and (min-width: 700px) {
+    #component_div[b-fzn5wsu0mu] {
+        padding: 10px;
+        width: 30%;
+    }
+
+}
+
+@media only screen and (max-width: 699px) {
+    #component_div[b-fzn5wsu0mu] {
+        padding: 10px;
+        width: 40%;
+        bottom: 35px;
+    }
+
+
+}
+/* /Shared/MainLayout.razor.rz.scp.css */
+body[b-mu7krleios] {
+    margin: 0 auto;
+  }
+
+  /* div som omsluter innehåll*/
+#content[b-mu7krleios] {
+    background-color: rgb(248, 242, 53);
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+}
+
+/*sidhuvud*/
+header[b-mu7krleios] {
+    background-color: rgb(48, 119, 79);
+    padding: 20px;
+    text-align:center;
+}
+
+/* rubrik i header */
+h1.header_text[b-mu7krleios] {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* vänster div som innehåller meny */
+#left[b-mu7krleios] {
+    background-color: brown;
+    float: left;
+    width:20%;
+    margin-right:3%;
+    padding: 60px 10px 60px 10px;
+}
+
+/* höger div som innehåller huvudinnehållet*/
+#right[b-mu7krleios] {
+    background-color: white;
+    float: left;
+    width: 68%;
+    padding: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px black solid;
+}
+
+/* sidfot */
+footer[b-mu7krleios] {
+    background-color: rgb(34, 87, 57);
+    color: white;
+    width: 100%;
+    float: left;
+    padding: 10px 0px 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 1150px) and (min-width: 700px) {
+    #right[b-mu7krleios]{
+        width: 60%;
+    }
+    
+    #left[b-mu7krleios] {
+        width: 19%;
+    }
+  }
+
+  @media only screen and (max-width: 699px) {
+    #left[b-mu7krleios] {
+        width: 100%;
+        padding: 0px;
+    }
+
+    #right[b-mu7krleios] {
+        width: 78%;
+    }
+
+    footer[b-mu7krleios] {
+        font-size: 13px;
+    }
+  }
+/* /Shared/NavMenu.razor.rz.scp.css */
+
+/* ul för meny */
+#nav_ul[b-orv73tbraq] {
+    list-style: none;
+}
+
+/* li för meny */
+.nav_li[b-orv73tbraq] {
+    margin-bottom: 10px;
+    padding-left: 40px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+/* menylänkar */
+a.nav_link:link[b-orv73tbraq], a.nav_link:visited[b-orv73tbraq] {
+    color:white;
+    text-decoration: none;
+  }
+  
+  a.nav_link:hover[b-orv73tbraq], a.nav_link:active[b-orv73tbraq] {
+    color: rgb(248, 242, 53);
+    border-left: solid white 5px;
+  }
+
+
+  @media only screen and (max-width: 1150px) and (min-width: 700px) {
+    .nav_li[b-orv73tbraq] {
+      font-size: 16px;
+      padding-left: 0px;
+      padding: 3px;
+    }
+
+    #nav_ul[b-orv73tbraq] {
+      margin-left: -15px;
+    }
+  }
+
+  @media only screen and (max-width: 699px) {
+    .nav_li[b-orv73tbraq] {
+        display: block;
+        float: left;
+        font-size: 18px;
+        margin-right: 12px;
+        padding-left: 0px;
+    }
+  }

@@ -1,0 +1,97 @@
+
+/*Rubriker*/
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+h3 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: -10px -10px 30px -10px;
+    background-color: rgb(34, 87, 57);
+    color: white;
+    }
+
+h4 {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(248, 242, 53);
+    padding: 10px;
+    width: 90%;
+    }
+
+h5 {
+    margin: 5px;
+}
+
+/* bild */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    }
+
+ /* div som innehåller de två olika konverteringsalternativen*/
+.div_convert {
+    margin-top: 20px;
+    margin-right: 3%;
+    float: left;
+    width: 44%;
+    border: solid black 1px;
+    padding: 10px
+}
+
+/* ul för att skriva ut json*/
+#json_ul {
+    list-style: none;
+    margin-top: 20px;
+    background-color: rgb(248, 242, 53);
+    padding: 10px;
+    width: 60%;
+  }
+
+  /* li för att skriva ut json */
+  .json_li {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0px;
+    margin-bottom: 15px;
+  }
+
+  @media only screen and (max-width: 1150px) and (min-width: 700px) {
+    .div_convert {
+        width: 90%;
+    }
+
+    #json_ul {
+        width: 95%; 
+    }
+  }
+
+  @media only screen and (max-width: 699px) {
+    h5 {
+        font-size: 12px;
+        font-weight: normal;
+        color: white;
+    }
+
+    .div_convert {
+        width: 95%;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    #json_ul {
+        width: 100%; 
+    }
+
+    .json_li {
+        font-size: 14px;
+      }
+
+  }

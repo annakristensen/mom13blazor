@@ -1,0 +1,48 @@
+
+/* ul för meny */
+#nav_ul {
+    list-style: none;
+}
+
+/* li för meny */
+.nav_li {
+    margin-bottom: 10px;
+    padding-left: 40px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+/* menylänkar */
+a.nav_link:link, a.nav_link:visited {
+    color:white;
+    text-decoration: none;
+  }
+  
+  a.nav_link:hover, a.nav_link:active {
+    color: rgb(248, 242, 53);
+    border-left: solid white 5px;
+  }
+
+
+  @media only screen and (max-width: 1150px) and (min-width: 700px) {
+    .nav_li {
+      font-size: 16px;
+      padding-left: 0px;
+      padding: 3px;
+    }
+
+    #nav_ul {
+      margin-left: -15px;
+    }
+  }
+
+  @media only screen and (max-width: 699px) {
+    .nav_li {
+        display: block;
+        float: left;
+        font-size: 18px;
+        margin-right: 12px;
+        padding-left: 0px;
+    }
+  }

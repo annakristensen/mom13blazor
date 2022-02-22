@@ -1,0 +1,25 @@
+﻿@inherits LayoutComponentBase
+
+<!-- Div som omsluter innehåll-->
+<div id="content">
+    <header>
+        <h1 class="header_text">Moment 1.3 - Blazor WebAssembly</h1>
+    </header>
+
+<!-- div som innehåller meny -->
+    <div id="left">
+        <NavMenu />
+    </div>
+
+<!-- div som innehåller själva sidinnehållet till höger -->
+    <div id="right">
+        @Body
+    </div>
+
+<!-- sidfot -->
+    <footer>
+         Av: Anna Kristensen - E-post: ankr1501@student.miun.se
+    </footer>
+
+</div>
+ 
